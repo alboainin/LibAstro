@@ -34,3 +34,8 @@
 # Cmake
 *.cmake
 *.tct
+
+# Project ignores
+bin/
+build/
+buildRelease/
