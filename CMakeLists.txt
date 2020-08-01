@@ -18,17 +18,10 @@ if (CMAKE_BUILD_TYPE STREQUAL "Release")
     add_definitions(-D__RELEASE__)
 endif (CMAKE_BUILD_TYPE STREQUAL "Release")
 
+# Add libAstro project
+add_subdirectory("src/libastro/")
+
 # Add sandbox project
-file(GLOB_RECURSE sandbox_hdrs "src/bin/sandbox/*.h")
-file(GLOB_RECURSE sandbox_srcs "src/bin/sandbox/*.cpp")
+add_subdirectory("src/bin/sandbox/")
 
-include_directories("src/bin/sandbox")
-include_directories("src/libastro")
 
-add_library(Astro STATIC
-                    libastro.cpp )
-
-TARGET_LINK_LIBRARIES(StaticTest Astro)
-
-add_executable(StaticTest Astro)
-add_executable(sandbox ${sandbox_hdrs} ${sandbox_srcs})
