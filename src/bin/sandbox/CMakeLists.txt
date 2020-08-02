@@ -6,4 +6,4 @@ include_directories(".")
 include_directories("../../libastro/")
 
 add_executable(sandbox ${sandbox_hdrs} ${sandbox_srcs})
-target_link_libraries(sandbox libAstro)
+target_link_libraries(sandbox Astro)
