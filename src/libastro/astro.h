@@ -8,6 +8,8 @@
 
 namespace astro {
 int init();
-
-unsigned int termsize();
+void disableRawMode();
+void enableRawMode();
+void termsize();
+void terminate();
 }

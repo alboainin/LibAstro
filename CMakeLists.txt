@@ -22,6 +22,6 @@ endif (CMAKE_BUILD_TYPE STREQUAL "Release")
 add_subdirectory("src/libastro/")
 
 # Add sandbox project
-add_subdirectory("src/bin/sandbox/")
+add_subdirectory("src/sandbox/")
 
 
