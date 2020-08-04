@@ -15,12 +15,6 @@ void termsize()
 
     unsigned int cols = size.ws_col;
     unsigned int rows = size.ws_row;
-
-    for(int co = 0; co < cols; co++)
-    {   
-         std::cout << "*";
-    }
-
 }
 
 void terminate()
