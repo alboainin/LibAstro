@@ -1,9 +1,3 @@
-#include <asm-generic/ioctls.h>
-#include <iostream>
-#include <sys/ioctl.h>
-#include <unistd.h>
-
-#include "astro.h"
 #include "libastro.h"
 
 namespace astro {
@@ -14,17 +8,6 @@ int init() {
     
 }
 
-void disableRawMode() 
-{
-}
-
-void enableRawMode() {
-  struct termios raw;
-  tcgetattr(STDIN_FILENO, &raw);
-  raw.c_lflag &= ~(ECHO);
-  tcsetattr(STDIN_FILENO, TCSAFLUSH, &raw);
-}
-
 void termsize()
 {
     struct winsize size;
@@ -32,6 +15,12 @@ void termsize()
 
     unsigned int cols = size.ws_col;
     unsigned int rows = size.ws_row;
+
+    for(int co = 0; co < cols; co++)
+    {   
+         std::cout << "*";
+    }
+
 }
 
 void terminate()
