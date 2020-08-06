@@ -28,12 +28,17 @@ namespace astro {
                 if(key == Keys::ENTER)
                 {
 
-                    printf("SPACE\n");
+                    printf("ENTER\n");
                 }
 
                 if(key == Keys::ARROW_UP)
                 {
                     printf("UP\n");
+                }
+
+                if(key == Keys::ARROW_DOWN)
+                {
+                    printf("DOWN\n");
                 }
  
             } while(key!='*');

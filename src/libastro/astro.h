@@ -15,11 +15,12 @@ void disableRawMode();
 
     namespace keyboard {     
         enum Keys { 
-            ARROW_UP    = 279165,
-            ARROW_DOWN  = 279166,
-            ARROW_RIGHT = 279167,
-            ARROW_LEFT  = 279168,
-            ENTER =  10
+            ARROW_UP    = 65,
+            ARROW_DOWN  = 66,
+            ARROW_RIGHT = 67,
+            ARROW_LEFT  = 68,
+            ENTER =  10,
+            SPACE = 32
         };
         void captureInput(bool KeyVal);
         void resetInput();
