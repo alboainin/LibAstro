@@ -8,8 +8,7 @@ int init() {
     
 }
 
-void termsize()
-{
+void termsize() {
     struct winsize size;
     ioctl(0, TIOCGWINSZ, &size);
 
@@ -17,8 +16,7 @@ void termsize()
     unsigned int rows = size.ws_row;
 }
 
-void terminate()
-{
+void terminate() {
     // Free memory on the heap
     // For now we will just wait for the input
     std::cin.get();

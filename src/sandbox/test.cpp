@@ -10,8 +10,8 @@ int main() {
         std::cout << "" << std::endl;
 
 
-    astro::enableRawMode();
-
+    //astro::enableRawMode();
+    astro::keyboard::captureInput(false);
 
 
  // astro::termsize();

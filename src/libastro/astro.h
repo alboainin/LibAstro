@@ -13,8 +13,17 @@ int init();
 void enableRawMode();
 void disableRawMode();
 
-void captureInput();
-void resetInput();
+    namespace keyboard {     
+        enum Keys { 
+            ARROW_UP    = 279165,
+            ARROW_DOWN  = 279166,
+            ARROW_RIGHT = 279167,
+            ARROW_LEFT  = 279168,
+            ENTER =  10
+        };
+        void captureInput(bool KeyVal);
+        void resetInput();
+    }
 
 void termsize();
 void terminate();
