@@ -2,16 +2,15 @@
 
 namespace astro {
 
-struct termios orig_termios;
+struct termios orig_termios, raw_termios;
 
 void enableRawMode()
 {
     tcgetattr(STDIN_FILENO, &orig_termios);
     atexit(disableRawMode);
    
-    struct termios raw = orig_termios;
-    raw.c_lflag &= ~(ECHO | ISIG | IXON);
-    tcsetattr(STDIN_FILENO,TCSAFLUSH, &raw);
+    raw_termios.c_lflag &= ~(ECHO | ISIG | IXON);
+    tcsetattr(STDIN_FILENO,TCSAFLUSH, &raw_termios);
 }
 
 void disableRawMode()

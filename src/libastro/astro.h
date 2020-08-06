@@ -13,6 +13,9 @@ int init();
 void enableRawMode();
 void disableRawMode();
 
+void captureInput();
+void resetInput();
+
 void termsize();
 void terminate();
 }
