@@ -7,6 +7,8 @@
 #include <sys/ioctl.h>
 #include <unistd.h>
 
+#include "text.h"
+
 namespace astro {
 int init();
 

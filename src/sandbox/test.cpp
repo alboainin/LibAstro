@@ -6,13 +6,14 @@
 #include <ostream>
 
 int main() {
-    if (astro::init() != 0)
-        std::cout << "" << std::endl;
+//    if (astro::init() != 0)
+//        std::cout << "" << std::endl;
 
 
     //astro::enableRawMode();
-    astro::keyboard::captureInput(false);
 
+//    astro::keyboard::captureInput(false);
+    std::cout << astro::Color::FG_RED << astro::Color::REVERSE_VIDEO << "word"<< std::endl; 
 
  // astro::termsize();
  
