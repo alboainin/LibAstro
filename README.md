@@ -1,4 +1,4 @@
-![GCC](https://github.com/AliAlboainin96/LibAstro/workflows/Gcc/badge.svg)
+![GCC](https://github.com/AliAlboainin96/LibAstro/workflows/GCC/badge.svg)
 # LibAstro
 Simple Terminal user interface library to create astonishing applications.
 
