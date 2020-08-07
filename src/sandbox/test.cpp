@@ -6,8 +6,8 @@
 #include <ostream>
 
 int main() {
-//    if (astro::init() != 0)
-//        std::cout << "" << std::endl;
+    if (astro::init() != 0)
+        std::cout << "" << std::endl;
 
 
     //astro::enableRawMode();
