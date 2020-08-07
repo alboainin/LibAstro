@@ -1,4 +1,3 @@
-#include "cursor.h"
 #include "libastro.h"
 
 namespace astro {
