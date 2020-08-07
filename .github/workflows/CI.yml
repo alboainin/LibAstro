@@ -1,4 +1,4 @@
-name: Gcc
+name: GCC
 
 on: [push]
 
