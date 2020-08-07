@@ -5,7 +5,7 @@ Simple Terminal user interface library to create astonishing applications.
 # Getting Started
 
 ## Developers
-Make Sure you `cmake`, `gcc`. To get a copy of the source code for development:
+Make Sure you got `cmake`, `gcc`. To get a copy of the source code for development:
 ```shell
 $ git clone https://github.com/alialboainin96/LibAstro.git
 ```
