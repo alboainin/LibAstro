@@ -53,5 +53,6 @@ namespace astro {
             inline std::ostream& operator<<(std::ostream& os, Code code) {
                 return os << "\e[" << static_cast<int>(code) << "m";
                 }
-        }
+    
+    }
 }   

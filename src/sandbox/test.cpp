@@ -13,7 +13,9 @@ int main() {
     //astro::enableRawMode();
 
 //    astro::keyboard::captureInput(false);
-    std::cout << astro::Color::FG_RED << astro::Color::REVERSE_VIDEO << "word"<< std::endl; 
+    std::cout << astro::Color::REVERSE_VIDEO << "Start" << std::endl; 
+
+
 
  // astro::termsize();
  

@@ -8,6 +8,7 @@
 #include <unistd.h>
 
 #include "text.h"
+#include "cursor.h"
 
 namespace astro {
 int init();
