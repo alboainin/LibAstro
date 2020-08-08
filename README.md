@@ -2,6 +2,7 @@
 # LibAstro
 Simple Terminal user interface library to create astonishing applications.
 
+<p align="center"><img src="/doc/examples/basic_menu?raw=true"/></p>
 # Getting Started
 
 ## Developers
