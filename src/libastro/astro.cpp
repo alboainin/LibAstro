@@ -21,6 +21,7 @@ void terminate() {
     // For now we will just wait for the input
     std::cin.get();
     astro::Cursor::EnableCursor(true);
+    system("clear");
 }
 
 }  // namespace astro
