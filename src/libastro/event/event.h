@@ -1,4 +1,8 @@
-
+#include <iostream>
+#include <vector>
+#include <string>
+#include <chrono>
+#include <thread>
 
 namespace astro {
     namespace Event {
@@ -15,6 +19,10 @@ namespace astro {
 
             void captureInput(bool KeyVal);
             void resetInput();
+        }
+
+        namespace Window { 
+            
         }
     }
 }
