@@ -2,7 +2,7 @@
 
 namespace astro {
     namespace Event {
-    enum Event
+    enum EventType
     {
     };
 
