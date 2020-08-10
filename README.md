@@ -12,15 +12,7 @@ Make Sure you got `cmake`, `gcc`. To get a copy of the source code for developme
 $ git clone https://github.com/alialboainin96/LibAstro.git
 ```
 Compiling code:
-    Build:
 
-    ```shell
-    $ ./build.sh
-    ```
-    Release:
-    ```shell
-    $ ./buildRelease.sh
-    ```
 ### Building
 
 For debug:
