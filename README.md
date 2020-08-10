@@ -21,6 +21,27 @@ Compiling code:
     ```shell
     $ ./buildRelease.sh
     ```
+### Building
+
+For debug:
+
+```shell
+$ ./build.sh
+```
+
+For release:
+
+```shell
+$ ./buildRelease.sh
+```
+
+### Cleaning the directory
+
+To clean the project directory:
+
+```shell
+$ ./clean.sh
+```
 
 ## Built With
 * [C++](https://en.wikipedia.org/wiki/C%2B%2B) - Language
