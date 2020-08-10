@@ -1,4 +1,4 @@
-#include "../astro.h"
+#include "event.h"
 
 namespace astro {    
     namespace Event {
