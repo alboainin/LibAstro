@@ -1,7 +1,9 @@
 #include "cursor.h"
             
 namespace astro { 
-    namespace Cursor {
+    class Cursor {
+        public:
+
         bool EnableCursor(bool state)
         {
             if(state)
