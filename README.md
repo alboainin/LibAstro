@@ -11,16 +11,28 @@ Make Sure you got `cmake`, `gcc`. To get a copy of the source code for developme
 ```shell
 $ git clone https://github.com/alialboainin96/LibAstro.git
 ```
-Compiling code:
-    Build:
 
-    ```shell
-    $ ./build.sh
-    ```
-    Release:
-    ```shell
-    $ ./buildRelease.sh
-    ```
+### Building
+
+For debug:
+
+```shell
+$ ./build.sh
+```
+
+For release:
+
+```shell
+$ ./buildRelease.sh
+```
+
+### Cleaning the directory
+
+To clean the project directory:
+
+```shell
+$ ./clean.sh
+```
 
 ## Built With
 * [C++](https://en.wikipedia.org/wiki/C%2B%2B) - Language
