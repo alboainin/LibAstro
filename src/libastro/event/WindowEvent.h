@@ -15,7 +15,7 @@ namespace astro {
     
 
     public:
-        inline std::tuple<unsigned int, unsigned int> GetTerminalSize() {
+        std::tuple<unsigned int, unsigned int> GetTerminalSize() {
             struct winsize size;
             ioctl(0, TIOCGWINSZ, &size);
     
