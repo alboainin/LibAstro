@@ -5,7 +5,7 @@
 #include <thread>
 
 #include <sys/ioctl.h>
-#include <termios>
+#include <termios.h>
 #include <unistd.h>
 #include <stdlib.h>
 #include <stdio.h>

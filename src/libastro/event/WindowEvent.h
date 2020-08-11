@@ -9,8 +9,7 @@ namespace astro {
 
         unsigned int GetColumns() const { return m_Columns; }
         unsigned int GetRows()    const { return m_Rows;    }
-     
-            
+                 
     private:
         unsigned int m_Columns, m_Rows;
     }
