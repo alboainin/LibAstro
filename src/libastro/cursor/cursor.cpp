@@ -1,8 +1,7 @@
 #include "cursor.h"
             
 namespace astro { 
-    class Cursor {
-        public:
+    namespace Cursor {
 
         bool EnableCursor(bool state)
         {
@@ -19,7 +18,8 @@ namespace astro {
          
         unsigned int MoveCursor(Position cursorPos)
         {   
-            auto[col, row] = GetTerminalSize();
+           // auto[col, row] = GetTerminalSize();
+            unsigned int col, row = 1;
             auto halfCol = col / 2;
             auto halfRow = row / 2;
             

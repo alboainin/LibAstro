@@ -7,7 +7,7 @@
 #include <sys/ioctl.h>
 #include <unistd.h>
 
-#include "dimensions.h"
+
 #include "text.h"
 #include "cursor/cursor.h"
 
