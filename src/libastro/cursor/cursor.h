@@ -2,7 +2,7 @@
 
 #include <iostream>
 #include "../text.h"
-#include "../dimensions.h"
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <signal.h>

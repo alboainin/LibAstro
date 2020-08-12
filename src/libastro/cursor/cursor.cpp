@@ -18,7 +18,8 @@ namespace astro {
          
         unsigned int MoveCursor(Position cursorPos)
         {   
-            auto[col, row] = GetTerminalSize();
+           // auto[col, row] = GetTerminalSize();
+            unsigned int col, row = 1;
             auto halfCol = col / 2;
             auto halfRow = row / 2;
             

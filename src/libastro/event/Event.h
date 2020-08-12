@@ -13,7 +13,8 @@
 namespace astro {
     
     enum class EventType {
-        WindowClose, WindowResize,
+        WindowClose,
+        WindowResize,
         KeyPressed
     };
 
