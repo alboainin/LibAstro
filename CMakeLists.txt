@@ -24,4 +24,3 @@ add_subdirectory("src/libastro/")
 # Add sandbox project
 add_subdirectory("src/sandbox/")
 
-
