@@ -6,14 +6,14 @@ int init() {
     //return true;
     system("tput smcup");
     system("clear");
-    astro::Cursor::EnableCursor(false);
+    astro::cursor::EnableCursor(false);
 }
 
 void terminate() {
     // Free memory on the heap
     // For now we will just wait for the input
     std::cin.get();
-    astro::Cursor::EnableCursor(true);
+    astro::cursor::EnableCursor(true);
     system("clear");
     system("tput rmcup");
 }

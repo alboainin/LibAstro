@@ -1,7 +1,7 @@
 #include "cursor.h"
             
 namespace astro { 
-    namespace Cursor {
+    namespace cursor {
 
         bool EnableCursor(bool state)
         {
@@ -27,7 +27,7 @@ namespace astro {
             if(cursorPos == Position::Center)
             {
                 std::cout << "\e[" << halfRow << ";" << halfCol << "f";
-                std::cout << astro::Color::REVERSE_VIDEO << "Start" << "\e[m";
+                std::cout << astro::color::REVERSE_VIDEO << "Start" << "\e[m";
                 halfRow++;
                 std::cout << "\e[" << halfRow << ";" << halfCol << "f";
 
@@ -50,7 +50,7 @@ namespace astro {
         void run()
         {
             signal(SIGWINCH, HandleResize);
-            astro::Cursor::MoveCursor(astro::Cursor::Position::Center);
+            astro::cursor::MoveCursor(astro::cursor::Position::Center);
         }
     }
 }

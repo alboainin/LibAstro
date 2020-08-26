@@ -8,7 +8,7 @@
 #include <signal.h>
 
 namespace astro {
-    namespace Cursor {
+    namespace cursor {
         enum Position { 
             Center
         };

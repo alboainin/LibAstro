@@ -13,7 +13,7 @@ int main() {
 //    astro::enableRawMode();
 
 //    astro::keyboard::captureInput(false);
-      std::cout << astro::Color::REVERSE_VIDEO << "Start" << std::endl; 
+      std::cout << astro::color::REVERSE_VIDEO << "Start" << std::endl; 
 
 //     astro::Cursor::run();
 
