@@ -10,12 +10,14 @@ int main() {
     if (astro::init() != 0)
         std::cout << "" << std::endl;
 
-//    astro::enableRawMode();
+//        astro::enableRawMode();
 
-//    astro::keyboard::captureInput(false);
-      std::cout << astro::color::REVERSE_VIDEO << "Start" << std::endl; 
+        //astro::Keyboard::captureInput(true);
+        astro::cursor::MoveCursor(astro::cursor::Center);         
+        
+        //std::cout << astro::color::REVERSE_VIDEO << "Start" << std::endl; 
 
-//     astro::Cursor::run();
+
 
  // astro::termsize();
  
