@@ -3,11 +3,7 @@
 namespace astro {
     namespace Window
     {
-        unsigned int m_Columns, m_Rows;
         
-        unsigned int GetColumns() const { return m_Columns; }
-        unsigned int GetRows()    const { return m_Rows;    }
-
         std::tuple<unsigned int, unsigned int> GetTerminalSize() {
             struct winsize size;
             ioctl(0, TIOCGWINSZ, &size);

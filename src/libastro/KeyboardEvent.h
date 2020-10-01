@@ -1,6 +1,5 @@
 #include "Event.h"
 
-
 namespace astro {
     namespace keyboard {
 

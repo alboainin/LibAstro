@@ -1,5 +1,5 @@
 #include "cursor.h"
-#include "../event/WindowEvent.h"
+
 
 namespace astro { 
     namespace cursor {
