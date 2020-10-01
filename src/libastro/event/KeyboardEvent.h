@@ -2,7 +2,7 @@
 
 
 namespace astro {
-    namespace Keyboard {
+    namespace keyboard {
 
 
         enum Keys { 
