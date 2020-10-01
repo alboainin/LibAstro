@@ -1,11 +1,13 @@
 #pragma once
 
 #include <iostream>
-#include "../text.h"
+#include "text.h"
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <signal.h>
+
+#include "WindowEvent.h"
 
 namespace astro {
     namespace cursor {
