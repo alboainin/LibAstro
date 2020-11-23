@@ -8,11 +8,14 @@
 #include <signal.h>
 
 #include "WindowEvent.h"
+#include "KeyboardEvent.h"
 
 namespace astro {
     namespace cursor {
         enum Position { 
-            Center
+            Begin,
+            Center,
+            End
         };
         bool EnableCursor(bool state);
         unsigned int MoveCursor(Position cursorPos);

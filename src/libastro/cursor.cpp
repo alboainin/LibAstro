@@ -1,4 +1,5 @@
 #include "cursor.h"
+#include "text.h"
 
 
 namespace astro { 
@@ -20,11 +21,35 @@ namespace astro {
         unsigned int MoveCursor(Position cursorPos)
         {   
             
-            auto[col, row] = astro::Window::GetTerminalSize();
+            auto[row, col] = astro::Window::GetTerminalSize();
 
             auto halfCol = col / 2;
             auto halfRow = row / 2;
-                    
+            
+
+            if(cursorPos == Position::Begin)
+            {
+            }
+
+            if(cursorPos == Position::Center)
+            {
+                std::cout << "\e[" << halfRow << ";" << halfCol << "f";
+                std::cout << astro::color::REVERSE_VIDEO<< "Start" << "\e[m";
+                halfRow++;
+                std::cout << "\e[" << halfRow << ";" << halfCol << "f";
+
+                halfRow++;
+                std::cout << "Options";
+                std::cout << "\e[" << halfRow << ";" << halfCol << "f";
+                
+                std::cout << "Exit";
+
+            }
+            
+            if(cursorPos == Position::End)
+            {
+            }
+
         }
     }
 }

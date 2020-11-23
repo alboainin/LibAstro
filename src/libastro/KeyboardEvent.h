@@ -1,3 +1,5 @@
+#pragma once
+
 #include "Event.h"
 
 namespace astro {
@@ -13,20 +15,20 @@ namespace astro {
             SPACE       = 32
         };
 
-        struct termios orig_termios, mod_termios;
+        inline struct termios kb_orig_termios, kb_mod_termios;
 
-        void resetInput() {
-            tcsetattr(STDIN_FILENO,TCSANOW,&orig_termios);
+        inline void resetInput() {
+            tcsetattr(STDIN_FILENO,TCSANOW,&kb_orig_termios);
         }
 
-        void captureInput(bool keyVal) {
+        inline void captureInput(bool keyVal) {
             unsigned int key;
 
-            tcgetattr(STDIN_FILENO,&orig_termios);
-            mod_termios=orig_termios;
+            tcgetattr(STDIN_FILENO,&kb_orig_termios);
+            kb_mod_termios=kb_orig_termios;
             atexit(resetInput);
-            mod_termios.c_lflag &=(~ICANON & ~ECHO);
-            tcsetattr(STDIN_FILENO,TCSANOW,&mod_termios);
+            kb_mod_termios.c_lflag &=(~ICANON & ~ECHO);
+            tcsetattr(STDIN_FILENO,TCSANOW,&kb_mod_termios);
             
             do {
                 key = getchar();
