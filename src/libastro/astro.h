@@ -7,9 +7,11 @@
 #include <sys/ioctl.h>
 #include <unistd.h>
 
-#include "text.h"
-#include "cursor.h"
-
+#include "Text.h"
+#include "Cursor.h"
+#include "Shapes.h"
+#include "Event.h"
+#include "KeyboardEvent.h"
 
 namespace astro {
 int init();

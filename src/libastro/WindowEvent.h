@@ -29,6 +29,7 @@ namespace astro {
 
         inline void CheckResize(int (*func)())
         {
+
             struct winsize ws;
             struct sigaction sa;
 
@@ -41,10 +42,13 @@ namespace astro {
             for(;;)
             {
                 pause();
-
+            
+                system("clear");
                 if(ioctl(STDIN_FILENO, TIOCGWINSZ, &ws) == -1)
                     std::cout << "Error: IOCTL Failed" << std::endl;
+
                 (*func)();
+         
             }
         }
     }    

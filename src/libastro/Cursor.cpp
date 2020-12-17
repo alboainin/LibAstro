@@ -1,11 +1,11 @@
-#include "cursor.h"
-#include "text.h"
+#include "Cursor.h"
+#include "Text.h"
 
 
 namespace astro { 
-    namespace cursor {
+    namespace Cursor {
 
-        bool EnableCursor(bool state)
+        bool VisibleCursor(bool state)
         {
             if(state)
             {
@@ -29,27 +29,24 @@ namespace astro {
 
             if(cursorPos == Position::Begin)
             {
+                std::cout << "\e[" << 0 << ";" << 0 << "f";
             }
 
             if(cursorPos == Position::Center)
             {
                 std::cout << "\e[" << halfRow << ";" << halfCol << "f";
-                std::cout << astro::color::REVERSE_VIDEO<< "Start" << "\e[m";
-                halfRow++;
-                std::cout << "\e[" << halfRow << ";" << halfCol << "f";
-
-                halfRow++;
-                std::cout << "Options";
-                std::cout << "\e[" << halfRow << ";" << halfCol << "f";
-                
-                std::cout << "Exit";
-
             }
+
             
             if(cursorPos == Position::End)
             {
             }
 
+        }
+
+        unsigned int move(unsigned int x, unsigned int y)
+        {
+            std::cout << "\e[" << x << ";" << y << "f";
         }
     }
 }

@@ -3,7 +3,7 @@
 #include <ostream>
 
 namespace astro {
-        namespace color { 
+        namespace Color { 
             enum Code {
                 FG_BLACK            = 30,
                 FG_RED              = 31,

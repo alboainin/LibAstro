@@ -1,25 +1,28 @@
 #pragma once
 
 #include <iostream>
-#include "text.h"
+#include "Text.h"
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <signal.h>
 
 #include "WindowEvent.h"
-#include "KeyboardEvent.h"
+
+
+#define TopPos    astro::Cursor::Position::Begin
+#define CenterPos astro::Cursor::Position::Center
+#define LowerPos  astro::Cursor::Position::End
 
 namespace astro {
-    namespace cursor {
+    namespace Cursor {
         enum Position { 
             Begin,
             Center,
             End
         };
-        bool EnableCursor(bool state);
+        bool VisibleCursor(bool state);
         unsigned int MoveCursor(Position cursorPos);
-        void HandleResize(int sig);
-        void run();
+        unsigned int move(unsigned int x, unsigned int y);
     }
 }
